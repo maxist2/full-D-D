@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>    
+    <header>
+        <div class="pan-1"> 
+            <span>pj name</span>
+        </div>
+    </header>
+
+    <div class="panel">
+        <div class="pan-2"> 
+            <div class="flex elementos-centro gap-2 mb-4">
+                <h2>Puntos de Golpe <i class="red" data-lucide="heart"></i> </h2>
+            </div>
+            <div>
+                <span id="mostrar-salud" class="texto-xl negrita">50 / 100</span>
+                <span id="mostrar-pg-temp" class="texto-azul-500 negrita"></span>
+            </div>        
+                <div class="cont-botnes">
+                    <button id="daño"><i data-lucide="sword" alt="daño"></i></button>
+                    <input type="number" id="v-mod" placeholder="0" min="0" step="1"/> 
+                    <button id="curacion"><i data-lucide="heart" alt="curación"></i></button>
+                    <button id="extra"><i data-lucide="shield-plus" alt="extra"></i></button>
+                </div>
+            <div class="progress-bar-container">
+                <div id="progress-bar">
+                    <span id="progress-bar-value">50</span>
+                </div>            
+                <div id="temp-bar">
+                    <span id="temp-bar-value"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="panel" >
+        <h2 id="insp">Acciones <button id="inspiracion" > <i data-lucide="star"></i></button></h2>
+        <div class="apan-1">
+            <div>
+            <button id="accion"><i data-lucide="swords" alt="Accion" width="32" height="32"></i></button>
+            <button id="bonus"><i data-lucide="sparkles" alt="Bonus" width="32" height="32"></i></button>
+            <button id="reaccion"><i data-lucide="shield" alt="extra" width="32" height="32"></i></button>
+            <!-- Eliminado el botón de inspiración -->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="panel" id="panel-2">
+        <h2>Movimiento</h2>
+        <div class="mpan-1">            
+            <div class="cont-botnes" style="margin-right: 15px;">
+                <button id="m-10ft">-10ft</button>
+                <button id="m-5ft">-5ft</button>
+            </div >
+            <div class="cont-botnes" style="margin-left: 15px;">
+                <button id="m_5ft">+5ft</button>
+                <button id="m_10ft">+10ft</button>
+            </div>
+        </div>
+        <div class="progress-bar-container">
+            <div id="movement-bar">
+                <span id="movement-bar-value">30 / 30</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <button id="end-turn">terminar turno</button>
+    <script src="scripts/puntosGolpe.js"></script>
+    <script src="scripts/acciones.js"></script>
+    </svg><script src="scripts/movimiento.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
